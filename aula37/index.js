@@ -1,7 +1,4 @@
-const pessoa = {
-  nome: 'Luiz',
-  sobrenome: 'Otávio'
-};
+const nomes = ['Luiz','Otávio'];
 
 // For clássico - Geralmente com iteráveis (array ou strings)
 // For in - Retorna o índice ou chave (string, array ou objetos)
@@ -19,9 +16,9 @@ const pessoa = {
 
 // console.log('####');
 
-// for (let valor of nomes) {
-//   console.log(valor);
-// }
+ for (let valor of nomes) {
+   console.log(valor);
+ }
 
 // console.log('####');
 

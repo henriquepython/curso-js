@@ -5,6 +5,8 @@ const elementos = [
   {tag: 'footer', texto: 'Frase 4'},
 ];
 
+
+
 const container = document.querySelector('.container');
 const div = document.createElement('div');
 
@@ -18,3 +20,4 @@ for (let i = 0; i < elementos.length; i++) {
 }
 
 container.appendChild(div);
+
