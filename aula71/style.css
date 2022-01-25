@@ -1,0 +1,12 @@
+.mydiv.myspan{
+    background: red;
+}
+.mydiv .myspan{
+    background: gray;
+}
+div.mydiv > span.myspan{
+    background: green;
+}
+.mydiv > span:first-child{
+    background: purple;
+}

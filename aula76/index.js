@@ -11,12 +11,13 @@ Produto.prototype.desconto = function(quantia) {
   this.preco -= quantia;
 };
 
+//linkou as funções com o call
 function Camiseta(nome, preco, cor) {
   Produto.call(this, nome, preco);
   this.cor = cor;
 }
-Camiseta.prototype = Object.create(Produto.prototype);
-Camiseta.prototype.constructor = Camiseta;
+Camiseta.prototype = Object.create(Produto.prototype); //criou um objeto vazio e colocou o prototype produto no de camisetas
+Camiseta.prototype.constructor = Camiseta;//colocou construtor como camiseta
 
 Camiseta.prototype.aumento = function(percentual) {
   this.preco = this.preco + (this.preco * (percentual / 100));
